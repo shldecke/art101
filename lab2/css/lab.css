@@ -7,3 +7,16 @@
     border: solid 1px #888;
     background-color: #DDD8C4;
   }
+  
+  h1 {
+    color: navy;
+    font-size: 1500%;
+  }
+
+  p {
+    text-indent: 0.5in;
+  }
+  div#content {
+    background-color: #DDF8C4;
+    border: dotted 5px black;
+  }
