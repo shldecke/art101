@@ -1,7 +1,20 @@
-// index.js - purpose and description here
-// Author: Your Name
-// Date:
+// index.js - Rock-Paper-Scissors
+// Author: Shelby Decker <shldecke@ucsc.edu>
+// Date: April 25, 2023
 
+/*
+- Find an opponent
+- You challenge them
+  - You stand face to face with your opponent
+- You both make a fist with one hand
+- Both of you loudly and synchronously say “rock - paper - scissors” whilst simultaneously shaking your fist up and down
+  - While you're saying rock, paper, scissors, choose which option you’d like to display
+- Display your option at the end of “rock paper scissors”
+- Remember– rock beats scissors, scissors beats paper, and paper beats rock
+- First player to win 2 out of 3 games is the winner
+*/
+
+/*
 // Constants
 
 // Functions
@@ -19,3 +32,4 @@ function main() {
 
 // let's get this party started
 main();
+*/
