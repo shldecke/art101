@@ -19,7 +19,7 @@ function myFunction() {
 
 // calling the function
 var userInput = myFunction();
-document.writeln(userInput);
+document.writeln("Your sorted name: ", "</br>", userInput);
 /*
 function main() {
   console.log("Main function started.");
