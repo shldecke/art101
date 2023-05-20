@@ -8,7 +8,27 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
 */
-  #results #problems #challenge{
+  #results {
+    font-family: fantasy;
+    /*'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+  }
+  #problems {
+    font-family: fantasy;
+  } 
+
+  #challenge {
     font-family: fantasy;
   }
-  
+
+  #reflection {
+    font-family: fantasy;
+  }
+
+  #hogwarts {
+    padding: 5px;
+    border: dotted 5px;
+  }
+
+  #sortingText #output{
+    font-family: fantasy;
+  }
