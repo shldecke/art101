@@ -9,11 +9,12 @@ function getStuff(){
         url: "https://yesno.wtf/api",
         // data to be sent
         data: {},
-        type: "GET" 
+        type: "GET",
+        dataType: "application/json" 
     })
     .done(function(data){
-        console.log(data.answer);
-        console.log(data.image);
+        //console.log(data.answer);
+        //console.log(data.image);
         $("#output").html("<h2>${data.answer}</h2><img src='${data.image}'>"); 
         //$("#output").html += "<img src=" + data.image + ">";
         })
