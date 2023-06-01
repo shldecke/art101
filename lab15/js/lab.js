@@ -9,16 +9,16 @@ function getStuff(){
         url: "https://yesno.wtf/api",
         // data to be sent
         data: {},
-        type: "GET",
-        success: function(data){
-            console.log(data.answer);
-            console.log(data.image);
-            $("#output").html = "<h2>" + data.answer + "</h2><br>" + "<img src=" + data.image + ">";
-        },
-        error: function(jqXHR, textStatus, errorThrown){
-            console.log("error: ", textStatus, errorThrown);
-        }
+        type: "GET" 
     })
+    .done(function(data){
+        console.log(data.answer);
+        console.log(data.image);
+        $("#output").html("<h2>" + data.answer + "</h2>" + "<img src=" + data.image + ">");
+        })
+    .fail(function(jqXHR, textStatus, errorThrown){
+        console.log("Error: ", textStatus, errorThrown);
+        })
 }
 
 $("#activate").click(getStuff);
