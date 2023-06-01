@@ -14,7 +14,8 @@ function getStuff(){
     .done(function(data){
         console.log(data.answer);
         console.log(data.image);
-        $("#output").html("<h2>" + data.answer + "</h2>" + "<img src=" + data.image + ">");
+        $("#output").html("<h2>" + data.answer + "</h2>" + "<img src=" + data.image + ">"); 
+        //$("#output").html += "<img src=" + data.image + ">";
         })
     .fail(function(jqXHR, textStatus, errorThrown){
         console.log("Error: ", textStatus, errorThrown);
