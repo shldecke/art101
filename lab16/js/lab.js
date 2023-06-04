@@ -13,7 +13,7 @@ $.ajax({
     // data to be sent
     data: {},
     type: "GET",
-    dataType: "json" 
+    //dataType: "json" 
 })
 .done(function(data){
     //console.log(data.answer);
