@@ -19,7 +19,8 @@ $.ajax({
     //console.log(data.answer);
     //console.log(data.image);
     var comicObj = data;
-    $("#output").html("our comicObj: ", JSON.stringify(comicObj));
+    $("#output").html("our comicObj: " + comicObj);
+    //.html("our comicObj: ", JSON.stringify(comicObj));
         //.html("<h2>${data.answer}</h2><img src='${data.image}'>"); 
         //$("#output").html += "<img src=" + data.image + ">";
     })
