@@ -18,12 +18,14 @@ $.ajax({
 .done(function(data){
     //console.log(data.answer);
     console.log("success!!");
-    var comicObj = data;
-    //var comicObj = JSON.stringify(data);
-    //$("#output").html("our comicObj: " + comicObj);
-    $("#output").append("<br><h2> " + data.title);
-    $("#output").append("<br><img src='" + comicObj.img + "''/>");
-    $("#output").append("<p>alt: " + data.alt );
+    var comicObja = JSON.stringify(data);
+    console.log(comicObja);
+    console.log(data.title);
+    // //var comicObj = JSON.stringify(data);
+    // //$("#output").html("our comicObj: " + comicObj);
+    // $("#output").html("<h2> " + data.title);
+    // $("#output").append("<br><img src='" + comicObj.img + "'/>");
+    // $("#output").append("<p>alt: " + data.alt );
     })
 .fail(function(jqXHR, textStatus, errorThrown){
     console.log("Error: ", textStatus, errorThrown);
