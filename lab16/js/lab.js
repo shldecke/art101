@@ -9,7 +9,7 @@
 
 $.ajax({
     // URL
-    url: "https://xkcd.com/614/info.0.json",  // delete /614/
+    url: "https://xkcd.com/info.0.json",  // delete /614/
     // data to be sent
     data: {},
     type: "GET",
@@ -17,12 +17,13 @@ $.ajax({
 })
 .done(function(data){
     //console.log(data.answer);
-    //console.log(data.image);
+    console.log("success!!");
     var comicObj = data;
-    $("#output").html("our comicObj: " + comicObj);
-    //.html("our comicObj: ", JSON.stringify(comicObj));
-        //.html("<h2>${data.answer}</h2><img src='${data.image}'>"); 
-        //$("#output").html += "<img src=" + data.image + ">";
+    //var comicObj = JSON.stringify(data);
+    //$("#output").html("our comicObj: " + comicObj);
+    $("#output").append("<br><h2> " + data.title);
+    $("#output").append("<br><img src='" + comicObj.img + "''/>");
+    $("#output").append("<p>alt: " + data.alt );
     })
 .fail(function(jqXHR, textStatus, errorThrown){
     console.log("Error: ", textStatus, errorThrown);
