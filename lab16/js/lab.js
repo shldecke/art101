@@ -19,13 +19,14 @@ $.ajax({
     //console.log(data.answer);
     console.log("success!!");
     var comicObja = JSON.stringify(data);
+    var comicObj = data;
     console.log(comicObja);
-    console.log(data.title);
+    console.log(comicObj.title);
     // //var comicObj = JSON.stringify(data);
     // //$("#output").html("our comicObj: " + comicObj);
-    // $("#output").html("<h2> " + data.title);
-    // $("#output").append("<br><img src='" + comicObj.img + "'/>");
-    // $("#output").append("<p>alt: " + data.alt );
+    $("#output").html("<h2> " + comicObj.title);
+    $("#output").append("<br><img src='" + comicObj.img + "'/>");
+    $("#output").append("<p>alt: " + comicObj.alt );
     })
 .fail(function(jqXHR, textStatus, errorThrown){
     console.log("Error: ", textStatus, errorThrown);
