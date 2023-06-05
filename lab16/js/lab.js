@@ -19,18 +19,20 @@ $.ajax({
     //console.log(data.answer);
     console.log("success!!");
     var comicObja = JSON.stringify(data);
-    console.log("stringify works");
-    var comicObj = data;
-    console.log("we passed the comicObj assign line");
-    console.log(comicObja);
-    console.log(comicObj.title);
+    //console.log("stringify works");
+    //var comicObj = data;
+    //console.log("we passed the comicObj assign line");
+    //console.log(comicObja);
+    //console.log(comicObj.title);
     // //var comicObj = JSON.stringify(data);
     // //$("#output").html("our comicObj: " + comicObj);
-    $("#output").html("<h2> " + comicObj.title);
+    $("#output").html("<h2> " + data.title);
     console.log("printing the header");
-    $("#output").append("<img src='" + comicObj.img + "'/>");
-    $("#output").append("<p>alt: " + comicObj.alt );
+    $("#output").append("<img src='" + data.img + "'/>");
+    $("#output").append("<p>alt: " + data.alt );
     })
 .fail(function(jqXHR, textStatus, errorThrown){
     console.log("Error: ", textStatus, errorThrown);
     })
+
+    // trying only stringify and pulling data from data's attributes
