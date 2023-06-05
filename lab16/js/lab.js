@@ -16,7 +16,7 @@ $.ajax({
     dataType: "application/json" 
 })
 .done(function(comicObj){
-    console.log(JSON.stringify(comicObj));
+    console.log(comicObj);
     console.log("success!!");
     //var comicObja = JSON.stringify(comicObj);
     //console.log("stringify works");
