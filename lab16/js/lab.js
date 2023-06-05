@@ -15,10 +15,10 @@ $.ajax({
     type: "GET",
     dataType: "application/json" 
 })
-.done(function(data){
-    //console.log(data.answer);
+.done(function(comicObj){
+    console.log(JSON.stringify(comicObj));
     console.log("success!!");
-    var comicObja = JSON.stringify(data);
+    //var comicObja = JSON.stringify(comicObj);
     //console.log("stringify works");
     //var comicObj = data;
     //console.log("we passed the comicObj assign line");
@@ -26,10 +26,10 @@ $.ajax({
     //console.log(comicObj.title);
     // //var comicObj = JSON.stringify(data);
     // //$("#output").html("our comicObj: " + comicObj);
-    $("#output").html("<h2> " + data.title);
-    console.log("printing the header");
-    $("#output").append("<img src='" + data.img + "'/>");
-    $("#output").append("<p>alt: " + data.alt );
+    // $("#output").html("<h2> " + data.title);
+    // console.log("printing the header");
+    // $("#output").append("<img src='" + data.img + "'/>");
+    // $("#output").append("<p>alt: " + data.alt );
     })
 .fail(function(jqXHR, textStatus, errorThrown){
     console.log("Error: ", textStatus, errorThrown);
